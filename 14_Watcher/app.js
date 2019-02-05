@@ -25,6 +25,9 @@ new Vue({
 
             this.newData.empName =''
             this.newData.salary=0
+        },
+        showMessage : function(){
+            alert("Complete")
         }
     },
     computed:{
@@ -39,6 +42,11 @@ new Vue({
                 return value + Number(data.salary)
             },0)
             return sum/this.empGroup.length
+        }
+    },
+    watch:{
+        summation: function(){
+            this.showMessage()
         }
     }
     

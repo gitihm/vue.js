@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test_vue.js</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    
+    <div id="post">
+        หัวข้อ : {{title}} <br>
+        ข้อความ : {{message}} 
+
+    </div>
+    <div id="commit">
+        <textarea name="" id="" cols="30" rows="10">{{text}}</textarea>
+    </div>
+    <div id="like">
+        <button v-on:click="add">like</button>
+        <span>{{count}} like</span>
+    </div>
+        
+    <script src="app.js"></script>
+    </body>
+</html>
