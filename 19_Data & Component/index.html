@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test_vue.js</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <ul>
+                <li v-for="comment in comments" 
+                is="showcomment" 
+                v-bind:commentpost="comment"
+                ></li>
+            </ul>
+            <input type="text" v-model="newComment" v-on:keyup.enter="addcomment">
+            
+        </div>
+    
+        
+    <script src="app.js"></script>
+    </body>
+</html>

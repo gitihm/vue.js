@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test_vue.js</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+           <food-app>
+               <h2>อาหารอีสาน</h2>
+               <ul>
+                   <li> ก้อย</li>
+                   <li> ก้อย</li>
+               </ul>
+           </food-app>
+           <food-app>
+                <h2>อาหารใต้</h2>
+                <ul>
+                    <li>ใตปลา</li>
+                    <li>พริกไม่เผา</li>
+                </ul>
+           </food-app>
+            
+        </div>
+        <template id="foodarea">
+            <div id="food">
+                <slot></slot>
+            </div>
+
+        </template>
+    
+        
+    <script src="app.js"></script>
+    </body>
+</html>
